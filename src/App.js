@@ -34,7 +34,6 @@ function App() {
   useOnClickOutside(node, () => setOpen(false));
 
   const toggleMenu = (id) => {
-    console.log(id);
     navigationTemp.forEach((element) => {
       if (element.id === id) element.showChild = true;
     });
@@ -47,6 +46,7 @@ function App() {
     });
     setNavData(navigationTemp);
   }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <>
