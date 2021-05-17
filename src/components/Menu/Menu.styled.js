@@ -22,7 +22,7 @@ export const MenuItem = styled.div`
   transition: color 0.3s linear;
   display: flex;
   flex-direction: column;
-
+  cursor: pointer;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 0.5rem;
   }
@@ -40,4 +40,5 @@ export const MenuItemTitle = styled.div`
 
 export const SubItem = styled.div`
   display: ${(props) => (props.show ? "block" : "none")};
+  cursor: pointer;
 `;

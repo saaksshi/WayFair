@@ -18,15 +18,18 @@ function Menu({ open, navigation, toggleMenu }) {
                 </span>
                 <span>{navItem.title}</span>
               </div>
-              <div>
-                <span>
-                  {navItem.showChild ? (
-                    <img src={arrowDown} alt={navItem.title} />
-                  ) : (
-                    <img src={arrowUp} alt={navItem.title} />
-                  )}
-                </span>
-              </div>
+
+              {navItem.children.length > 0 ? (
+                <div>
+                  <span>
+                    {navItem.showChild ? (
+                      <img src={arrowDown} alt={navItem.title} />
+                    ) : (
+                      <img src={arrowUp} alt={navItem.title} />
+                    )}
+                  </span>
+                </div>
+              ) : null}
             </MenuItemTitle>
 
             <SubItem show={navItem.showChild}>

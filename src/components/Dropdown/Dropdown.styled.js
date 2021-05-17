@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledBurger = styled.button`
+export const DropDown = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -11,9 +11,4 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-`;
-
-export const StyledBurgerBlock = styled.div`
-  height: 60px;
-  width: 100%;
 `;
