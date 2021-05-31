@@ -4,7 +4,7 @@ import menu from "../../assets/menu.svg";
 function Burger({ open, setOpen, ...props }) {
   const isExpanded = open ? true : false;
   return (
-    <StyledBurgerBlock>
+    <StyledBurgerBlock open={open}>
       <StyledBurger
         aria-label="Toggle menu"
         aria-expanded={isExpanded}

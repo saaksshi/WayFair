@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   html, body {
@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background:  ${({ theme }) => theme.white};
     color: ${({ theme }) => theme.primaryLight};
-    font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
   }
-  `
+`;
